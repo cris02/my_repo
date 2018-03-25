@@ -9,8 +9,11 @@
             }
 
             function sin() {
-                var num = document.getElementById("n2");
+                var num = document.getElementById("n3");
                 num.value = Math.sin(num.value); 
+            function quarter() {
+                var num = document.getElementById("n2");
+                num.value = Math.pow(num.value, 4); 
             }
     
         </script>
@@ -24,8 +27,12 @@
         <button onclick="cube()"> x^3 </button>
         <p>Ingrese un numero para obtener el seno</p>
         Number:
-        <input type="text" id="n2"><p>
+        <input type="text" id="n3"><p>
         <button onclick="sin()"> Sin(x) </button>
+        <p>Ingrese un numero para la potencia de 4:</p>
+        Number:
+        <input type="text" id="n2"><p>
+        <button onclick="quarter()"> x^4 </button>
     </body>
     
 </html>
